@@ -2,6 +2,8 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import Products from "./Products";
+import Button from "react-bootstrap/Button";
+
 const Home = () => {
   return (
     <div classname="hero">
