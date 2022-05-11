@@ -1,3 +1,8 @@
-# context Api를 이용한 간단한 다크모드.
+# KAKAO MAP
+index.html에
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey={발급받은 key 입력}&libraries=services"></script>
 
-![readme](https://user-images.githubusercontent.com/91642972/162665794-8af685ed-19af-41dd-b57b-55931cfcc83b.gif)
+
+
+
+![image](https://user-images.githubusercontent.com/91642972/167538192-0a0eac44-3ed7-404c-ae24-2cebaa588c51.png)
