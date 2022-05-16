@@ -1,2 +1,7 @@
-### Chartjs Practice
-![image](https://user-images.githubusercontent.com/91642972/167230046-bca2c7ce-a75c-46f3-a0d6-849dce49254b.png)
+## Framer Motion
+#### drag carousel
+![image](https://user-images.githubusercontent.com/91642972/167974667-4ac5433f-3b71-4069-a33d-8ceac42689d0.png)
+
+
+![image](https://user-images.githubusercontent.com/91642972/167974691-337fbd24-2847-432e-b20f-893049372514.png)
+
