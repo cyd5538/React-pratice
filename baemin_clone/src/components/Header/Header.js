@@ -3,7 +3,7 @@ import HeaderMenu from "./HeaderMenu";
 import HeaderIcon from "./HeaderIcon";
 import styled from "styled-components";
 import HeaderRight from "./HeaderRight";
-
+import { Link } from "react-router-dom";
 const HeaderStyles = styled.div`
   .white{
     width: 100%;
@@ -79,7 +79,7 @@ const Header = () => {
       >
         <HeaderStyle>
           <div className="container">
-            <div className="home">배민칰문방구</div>
+            <div className="home"><Link to="/">배민칰문방구</Link></div>
             <HeaderIcon click={click} setClick={setClick} />
           </div>
           <HeaderMenu />
