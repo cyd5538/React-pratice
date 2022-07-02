@@ -4,11 +4,13 @@ import HeartEmoji from "../../img/heartemoji.png";
 import Humble from "../../img/humble.png";
 import Glasses from "../../img/glasses.png";
 import Card from "../Card/Card";
+import {motion} from 'framer-motion';
 // import Resume from './resume.pdf' pdf
 
 const Services = () => {
+  const transition = {duration : 1, type : 'spring'}
   return (
-    <div className="services">
+    <div className="services" id="Services">
       {/* left side */}
       <div className="awesome">
         <span>My Awesome</span>
@@ -24,21 +26,25 @@ const Services = () => {
       {/* right side */}
       <div className="cards">
         {/* 첫 번쨰 카드 */}
-        <div style={{ left: "14rem" }}>
+        <motion.div
+          initial={{left: "25%" }}
+          whileInView={{ left: '14rem`' }}
+          transition={transition}
+         style={{ left: "14rem" }}>
           <Card
             emoji={HeartEmoji}
             heading={"Design"}
             detail={"Figma, Sketch, Photoshop, Adobe, xd"}
           />
-        </div>
+        </motion.div>
         {/* 두 번쨰 카드 */}
-        <div style={{ top: "12rem", left: "-4rem" }}>
+        <motion.div style={{ top: "12rem", left: "-4rem" }}>
           <Card
             emoji={Glasses}
             heading={"Developer"}
             detail={"Html, Css, Javascript, React"}
           />
-        </div>
+        </motion.div>
         {/* 세 번쟤 카드 */}
         <div style={{ top: "19rem", left: "12rem" }}>
           <Card
