@@ -12,8 +12,8 @@ function App() {
       {/* <ScrollToTop /> */}
       <Navbar />
       <Hero />
-      {/* <Service />
-      <Recommend />
+      <Service />
+      {/* <Recommend />
       <Testimonials />
       <Footer /> */}
     </div>
