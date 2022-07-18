@@ -1,6 +1,6 @@
 import React, {useState,useEffect, useMemo} from 'react';
 
-function App() {
+function UseMemo() {
   const [number, setNumber] = useState(0);
   const [isKorea, setIsKorea] = useState(true);
 
@@ -11,14 +11,10 @@ function App() {
   }, [isKorea])
 
 
-  // // eslint-disable-next-line react-hooks/exhaustive-deps
-  // const location = {
-  //   country : isKorea ? '한국' : '외국'
-  // }
-
   useEffect(() => {
     console.log('useEffect 호출')
   },[location])
+   
   return (
     <div className="App">
       <h2>하루에 몇끼 먹어요?</h2>
@@ -31,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default UseMemo;
