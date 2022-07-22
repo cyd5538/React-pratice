@@ -1,23 +1,44 @@
-import ScrollToTop from "./components/ScrollToTop";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Service from "./components/Service";
-import Recommend from "./components/Recommend";
-import Testimonials from "./components/Testimonials";
+import React, { useEffect } from "react";
 import Footer from "./components/Footer";
-
-function App() {
-  return (  
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Recommend from "./components/Recommend";
+import ScrollToTop from "./components/ScrollToTop";
+import Services from "./components/Service";
+import Testimonials from "./components/Testimonials";
+import scrollreveal from "scrollreveal";
+export default function App() {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: "top",
+      distance: "80px",
+      duration: 2000,
+      reset: true,
+    });
+    sr.reveal(
+      `
+        nav,
+        #hero,
+        #services,
+        #recommend,
+        #testimonials,
+        footer
+        `,
+      {
+        opacity: 0,
+        interval: 300,
+      }
+    );
+  }, []);
+  return (
     <div>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Navbar />
       <Hero />
-      <Service />
-    <Recommend />
-      {/* <Testimonials />
-      <Footer />  */}
+      <Services />
+      <Recommend />
+      <Testimonials />
+      <Footer />
     </div>
   );
 }
-
-export default App;
